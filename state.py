@@ -1,11 +1,13 @@
-from typing import TypedDict, List, Dict, Any
+from typing import TypedDict, List, Dict, Any, Optional
 
 class BrowserAgentState(TypedDict):
-    task: str                          # 用户任务
-    history: List[Dict[str, Any]]      # 历史操作记录，每条包含 action, args, observation
-    current_url: str                   # 当前浏览器 URL
-    page_text: str                     # 当前页面可见文本（截断）
-    done: bool                         # 任务是否完成
-    final_answer: str                  # 最终结果
-    step_count: int                    # 已执行步数
-    max_steps: int                     # 最大步数限制
+    task: str
+    history: List[Dict[str, Any]]       # 操作历史
+    current_page_id: str                # 当前活动页签的标识
+    pages: Dict[str, str]               # 页签标识到页面 URL 的映射（简化）
+    done: bool
+    final_answer: str
+    step_count: int
+    max_steps: int
+    # 持久化相关
+    save_path: Optional[str]            # 可选，状态保存路径
