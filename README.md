@@ -73,4 +73,4 @@ python main.py
 
 > Copyright (c) 2026 Pink7rousers
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/mit-license.php) - see the [LICENSE](https://github.com/Pink7rousers/multi-agent-article-generator/blob/master/LICENSE) file for details.
+This project is licensed under the [MIT License](https://opensource.org/licenses/mit-license.php) - see the [LICENSE](https://github.com/Pink7rousers/browser-agent/blob/main/LICENSE) file for details.
